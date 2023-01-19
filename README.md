@@ -11,6 +11,7 @@
 - Type
 - Name
 - Query
+- pokemon
 
 ## Hooks
 
