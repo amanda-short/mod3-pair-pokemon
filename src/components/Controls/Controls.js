@@ -1,5 +1,11 @@
 import React from 'react';
 
-export default function Controls() {
-  return <div>Controls</div>;
+export default function Controls({ type }) {
+  return (
+    <select>
+      {type.map(({ type }) => (
+        <option key={type}>{type}</option>
+      ))}
+    </select>
+  );
 }

@@ -2,15 +2,19 @@ import React from 'react';
 import './Main.css';
 import { usePokemon } from '../../Hooks/pokemon.js';
 import PokeCard from '../PokeCard/PokeCard.js';
+import Controls from '../Controls/Controls.js';
 
 export default function Main() {
-  const { pokemon } = usePokemon();
+  const { pokemon, type } = usePokemon();
 
   return (
-    <main>
-      {pokemon.map((poke) => (
-        <PokeCard key={poke._id} {...poke} />
-      ))}
-    </main>
+    <div>
+      <Controls type={type} />
+      <main>
+        {pokemon.map((poke) => (
+          <PokeCard key={poke._id} {...poke} />
+        ))}
+      </main>
+    </div>
   );
 }
