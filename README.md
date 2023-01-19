@@ -3,6 +3,7 @@
 - Header
 - Main
 - PokeCard
+    -img, name, type, id
 - Footer
 - Controls
 
