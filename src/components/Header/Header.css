@@ -1,0 +1,8 @@
+header {
+  height: 50px;
+  background-color: var(--placeblue);
+  color: var(--placelemon);
+  font-size: larger;
+  font-weight: 700;
+  padding-top: 15px;
+}
