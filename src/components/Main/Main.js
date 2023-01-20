@@ -5,7 +5,11 @@ import PokeCard from '../PokeCard/PokeCard.js';
 import Controls from '../Controls/Controls.js';
 
 export default function Main() {
-  const { pokemon, type, handleTypeSelect } = usePokemon();
+  const { pokemon, type, handleTypeSelect, loading } = usePokemon();
+
+  if (loading) {
+    return <h1>loading...</h1>;
+  }
 
   return (
     <div>
