@@ -12,7 +12,9 @@ export function usePokemon() {
     const fetchData = async () => {
       const data = await fetchInitPokeData();
       setPokemon(data);
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
     };
     fetchData();
   }, []);
@@ -29,7 +31,9 @@ export function usePokemon() {
     setLoading(true);
     const data = await fetchTypedPokeData(type);
     setPokemon(data);
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   };
 
   return { pokemon, type, handleTypeSelect, loading };

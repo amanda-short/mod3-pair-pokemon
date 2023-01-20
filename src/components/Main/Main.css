@@ -7,11 +7,17 @@ main {
 }
 
 .loading {
-  animation: rotation 8s infinite linear;
+  animation: rotation 1s infinite linear;
   height: 300px;
-  transition-delay: 4s;
-  animation-delay: 3s;
-  /* transition-property: all;
-  transition-duration: 10s; */
+  /* transition-delay: 4s; */
+  /* animation-delay: 3s; */
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
