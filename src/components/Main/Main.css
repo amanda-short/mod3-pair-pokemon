@@ -5,3 +5,9 @@ main {
   background-color: var(--placelemon);
   overflow: scroll;
 }
+
+.loading {
+  animation: rotation 8s infinite linear;
+  height: 300px;
+}
+

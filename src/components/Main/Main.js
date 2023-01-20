@@ -3,12 +3,13 @@ import './Main.css';
 import { usePokemon } from '../../Hooks/pokemon.js';
 import PokeCard from '../PokeCard/PokeCard.js';
 import Controls from '../Controls/Controls.js';
+import pokeball from '../../pokeball.png';
 
 export default function Main() {
   const { pokemon, type, handleTypeSelect, loading } = usePokemon();
 
   if (loading) {
-    return <h1>loading...</h1>;
+    return <img className="loading" src={pokeball} />;
   }
 
   return (
