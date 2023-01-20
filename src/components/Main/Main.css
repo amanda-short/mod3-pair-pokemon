@@ -9,5 +9,9 @@ main {
 .loading {
   animation: rotation 8s infinite linear;
   height: 300px;
+  transition-delay: 4s;
+  animation-delay: 3s;
+  /* transition-property: all;
+  transition-duration: 10s; */
 }
 

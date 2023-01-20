@@ -1,0 +1,13 @@
+.controls {
+    background-color: var(--placered);
+    padding: 10px;
+}
+
+.select {
+    background-color: var(--placelemon);
+    text-transform: capitalize;
+    font-weight: 550;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 2px 2px;
+}

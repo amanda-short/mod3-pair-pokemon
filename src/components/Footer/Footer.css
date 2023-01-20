@@ -1,4 +1,6 @@
 footer {
   height: 50px;
   background-color: var(--placeblue);
+  color: var(--placelemon);
+  padding-top: 15px;
 }
