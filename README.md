@@ -34,4 +34,4 @@ X Each pair must have at least 3 commits each
 
 X Users can filter by type
 
-Users see a loading state when the data is being retrieved
+X Users see a loading state when the data is being retrieved
